@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kousek jinam</title>
+<style>
+#kj-watercolor-home {
+  font-family: Arial, sans-serif;
+  color: #424e43;
+}
+
+#kj-watercolor-home .site {
+  background: #f8f5eb;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#kj-watercolor-home .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 19px;
+  border-bottom: 1px solid #e7e2d4;
+}
+
+#kj-watercolor-home .logo {
+  font: italic 25px Georgia, serif;
+  line-height: 1;
+  color: #405448;
+}
+
+#kj-watercolor-home .links {
+  font-size: 10px;
+  display: flex;
+  gap: 12px;
+  color: #59675b;
+}
+
+#kj-watercolor-home .hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 380px;
+  padding: 42px 22px 32px;
+  background: #f8f5eb;
+}
+
+#kj-watercolor-home .wash {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#kj-watercolor-home .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+#kj-watercolor-home .eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #71806e;
+}
+
+#kj-watercolor-home h1 {
+  font: normal clamp(37px, 8vw, 49px)/1.1 Georgia, serif;
+  color: #405448;
+  max-width: 360px;
+  margin: 25px 0 16px;
+}
+
+#kj-watercolor-home p {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 345px;
+}
+
+#kj-watercolor-home .btn {
+  display: inline-block;
+  background: #526c56;
+  color: white;
+  border-radius: 28px;
+  padding: 12px 18px;
+  font-size: 12px;
+  margin-top: 17px;
+}
+
+#kj-watercolor-home .band {
+  position: relative;
+  overflow: hidden;
+  background: #e9ecdf;
+  padding: 34px 20px;
+  text-align: center;
+}
+
+#kj-watercolor-home .band:before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 100px;
+  left: -60px;
+  top: -40px;
+  background: #b8c7a6;
+  border-radius: 45% 55% 60% 40%;
+  filter: blur(17px);
+  opacity: .65;
+}
+
+#kj-watercolor-home .band p {
+  position: relative;
+  margin: 10px auto;
+}
+
+#kj-watercolor-home .footer {
+  text-align: center;
+  padding: 19px;
+  font-size: 11px;
+  color: #71806e;
+}
+</style>
+</head>
+
+<body>
+
+<div id="kj-watercolor-home" class="w-full">
+<div class="site">
+
+<header class="nav">
+  <div class="logo">Kousek<br>jinam</div>
+  <div class="links">
+    <span>Domů</span>
+    <span>Výpravy</span>
+    <span>O projektu</span>
+  </div>
+</header>
+
+<section class="hero">
+
+<svg class="wash"
+viewBox="0 0 420 390"
+preserveAspectRatio="xMidYMid slice"
+aria-hidden="true">
+
+<defs>
+  <filter id="kj-grain">
+    <feTurbulence
+      type="fractalNoise"
+      baseFrequency=".035"
+      numOctaves="3"
+      seed="8"/>
+    <feDisplacementMap
+      in="SourceGraphic"
+      scale="13"/>
+  </filter>
+
+  <filter id="kj-soft">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+</defs>
+
+<g opacity=".72" filter="url(#kj-soft)">
+  <path d="M260 -15 Q345 -25 400 35 Q440 95 375 145 Q330 180 280 125 Q230 70 260 -15Z"
+        fill="#b5c8a2"/>
+
+  <path d="M310 90 Q385 62 435 145 Q455 215 380 235 Q310 238 292 177 Q280 125 310 90Z"
+        fill="#d9bd7b"/>
+
+  <path d="M-40 285 Q10 220 85 250 Q155 280 120 355 Q85 415 5 385 Q-50 350 -40 285Z"
+        fill="#c6d8d2"/>
+
+  <path d="M205 300 Q275 245 340 295 Q390 345 325 405 Q255 435 205 375Z"
+        fill="#d8a18a"/>
+</g>
+
+<g opacity=".5" filter="url(#kj-grain)">
+  <path d="M280 8 Q340 -10 385 40 Q415 85 362 124 Q314 151 277 103 Q250 52 280 8Z"
+        fill="#8fa987"/>
+
+  <path d="M-15 295 Q28 242 80 265 Q132 294 99 354 Q60 392 10 366 Q-24 341 -15 295Z"
+        fill="#a7c7c2"/>
+
+  <path d="M315 110 Q371 80 410 144 Q431 197 375 216 Q320 222 303 170Z"
+        fill="#e4c777"/>
+</g>
+
+<path d="M15 205 Q60 170 103 199"
+      fill="none"
+      stroke="#9aa98b"
+      stroke-width="2"
+      opacity=".3"/>
+
+</svg>
+
+<div class="hero-content">
+
+  <div class="eyebrow">
+    MALÁ DOBRODRUŽSTVÍ PRO KAŽDÝ DEN
+  </div>
+
+  <h1>
+    Někdy stačí vykročit trochu jinam.
+  </h1>
+
+  <p>
+    Vypni na chvíli každodenní shon.
+    Vydej se ven, rozhlédni se kolem sebe
+    a objev něco, co ti možná dosud unikalo.
+  </p>
+
+  <span class="btn">
+    Objev první výpravu&nbsp; →
+  </span>
+
+</div>
+</section>
+
+<section class="band">
+
+  <div class="eyebrow">
+    ŽÁDNÝ SPĚCH. ŽÁDNÁ PRAVIDLA.
+  </div>
+
+  <h2 style="
+    font:normal 30px Georgia,serif;
+    margin:9px 0 12px;
+    color:#405448">
+    Stačí vyrazit.
+  </h2>
+
+  <p>
+    Vyber si vlastní cestu, najdi svoje místa
+    a užij si chvíli, která patří jen tobě.
+  </p>
+
+</section>
+
+<div class="footer">
+  Kousek jinam · Pojďte ven.
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
